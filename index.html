@@ -2,22 +2,85 @@
 <html>
   <head>
     <title>Welcome!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style type="text/css">
       body {
         background: #05a5ba
       }
       h1 {
-        color: #ed00e1;
+        color: #4fdd60;
       }
     </style>
   </head>
   <body>
+    <div class="topnav">
+        <a class="active" href="index.html" style="text-align:center"; height: 100px;> Home </a>
+        <a href="animals.html"> Animals </a>
+        <a href="games.html"> Games  </a>
+        <a href="music.html"> Music </a>
+        <a href="cars.html" style> Cars </a>
+        <a href="birthday.html"> Others </a>
+    </div>
     <h1>Hello it's me, Ulises Rico!</h1>
     <h2>Check out this aswesome place!</h2>
-    <img src="https://static.dezeen.com/uploads/2017/03/los-angeles-skyline-2030-visualhouse_dezeen_hero-852x480.jpg">
+    <img src="https://static.dezeen.com/uploads/2017/03/los-angeles-skyline-2030-visualhouse_dezeen_hero-852x480.jpg" border="5">
 
         <p><a href="url">To preview this place, click onto the bottom link</a></p>
         <a href="https://en.wikipedia.org/wiki/Los_Angeles">Click me!</a>
+
+<html>
+  <head>
+    <title></title>
+    <style>
+    img {
+      width: 50%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <
+<html>
+  <head>
+    <title></title>
+    <style>
+    img {
+      width: 50%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>Click on the photo to see a random image of fast cars</h1>
+    <img src="http://hanabi.autoweek.com/sites/default/files/styles/gen-1200-675/public/porschecover.jpg?itok=g3Zfcyyb" border="5" alt='image' id="changeablePic" onClick="change();">
+        <script type="text/javascript">
+      var lamboPic = "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/lamborghini-aventador_0.jpg";
+      var bugattiPic = "https://moneyinc.com/wp-content/uploads/2016/08/The-Best-Supercars-From-The-2016-Geneva-Motor-Show-Bugatti-Chiron.png";
+      var mclarenp1Pic = "http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2017%2F11%2Fmclaren-p1-xp05.jpg%3Fquality%3D85";
+      var mercedesPic = "https://di-uploads-pod7.s3.amazonaws.com/silverstarag/uploads/2018/01/P1090055_Fotor.jpg";
+      var koenigseggPic = "https://icdn-2.motor1.com/images/mgl/21ONz/s1/koenigsegg-regera-aero-package.jpg";
+      var audiPic = "https://www.autoguide.com/blog/wp-content/gallery/r8-oval-pipes-yellow/Audi-R8-Spied-8.jpg";
+      var mustangPic = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/magnetic-mustang-3-1510587680.jpg";
+      var gtrPic = "https://s3.amazonaws.com/dealerteamwork.bucket.1/oem-nissan/img/1479582944-2017-nissan-gtr-red-565-horsepower-original.jpg";
+      var laferrariPic = "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari-laferrari.jpg";
+      var martinPic = "http://fatlace.com/wp-content/uploads/2013/01/22.png";
+      var animalPics = [lamboPic, bugattiPic, mclarenp1Pic, mercedesPic, koenigseggPic, audiPic, mustangPic, gtrPic, laferrariPic, martinPic ];
+
+      function change() {
+        var image = document.getElementById('changeablePic');
+        var animalPic = getRandomInt(0, 10)
+        image.src = animalPics[animalPic]
+      }
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+        //The maximum is exclusive and the minimum is inclusive
+      }
+    </script>
+  </body>
+</html>
 
   </body>
 </html>
